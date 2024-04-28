@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace cabinet.service
 {
-    public class IDossierService
+    public interface IDossierService
     {
-        /*List<dossier> GetAllDossiers();
-        specialite GetDossierById(int id_dos);
-        void AddDossier(dossier dossier);
-        void UpdateDossier(dossier dossier);
-        void DeleteDossier(int id_dos);*/
+       List<dossier> GetAllDossiers();
+       dossier GetDossierById(int id_dos);
+       void AddDossier(dossier dossier);
+       void UpdateDossier(dossier dossier);
+       void DeleteDossier(int id_dos);
+
     }
 }
