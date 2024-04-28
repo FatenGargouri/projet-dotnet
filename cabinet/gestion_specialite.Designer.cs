@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gestion_specialite));
             System.Windows.Forms.Label id_specLabel;
             System.Windows.Forms.Label nom_specLabel;
-            this.gestion_cabinetDataSet = new cabinet.gestion_cabinetDataSet();
+            this.gestion_cabinetDataSet1 = new cabinet.gestion_cabinetDataSet1();
             this.specialitesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.specialitesTableAdapter = new cabinet.gestion_cabinetDataSetTableAdapters.specialitesTableAdapter();
-            this.tableAdapterManager = new cabinet.gestion_cabinetDataSetTableAdapters.TableAdapterManager();
+            this.specialitesTableAdapter = new cabinet.gestion_cabinetDataSet1TableAdapters.specialitesTableAdapter();
+            this.tableAdapterManager = new cabinet.gestion_cabinetDataSet1TableAdapters.TableAdapterManager();
             this.specialitesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -57,24 +57,25 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             id_specLabel = new System.Windows.Forms.Label();
             nom_specLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gestion_cabinetDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_cabinetDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialitesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialitesBindingNavigator)).BeginInit();
             this.specialitesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.specialitesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // gestion_cabinetDataSet
+            // gestion_cabinetDataSet1
             // 
-            this.gestion_cabinetDataSet.DataSetName = "gestion_cabinetDataSet";
-            this.gestion_cabinetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.gestion_cabinetDataSet1.DataSetName = "gestion_cabinetDataSet1";
+            this.gestion_cabinetDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // specialitesBindingSource
             // 
             this.specialitesBindingSource.DataMember = "specialites";
-            this.specialitesBindingSource.DataSource = this.gestion_cabinetDataSet;
+            this.specialitesBindingSource.DataSource = this.gestion_cabinetDataSet1;
             // 
             // specialitesTableAdapter
             // 
@@ -88,7 +89,7 @@
             this.tableAdapterManager.patientsTableAdapter = null;
             this.tableAdapterManager.rendezvousTableAdapter = null;
             this.tableAdapterManager.specialitesTableAdapter = this.specialitesTableAdapter;
-            this.tableAdapterManager.UpdateOrder = cabinet.gestion_cabinetDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = cabinet.gestion_cabinetDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // specialitesBindingNavigator
             // 
@@ -223,7 +224,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.specialitesDataGridView.DataSource = this.specialitesBindingSource;
-            this.specialitesDataGridView.Location = new System.Drawing.Point(80, 223);
+            this.specialitesDataGridView.Location = new System.Drawing.Point(51, 211);
             this.specialitesDataGridView.Name = "specialitesDataGridView";
             this.specialitesDataGridView.RowHeadersWidth = 51;
             this.specialitesDataGridView.RowTemplate.Height = 24;
@@ -250,7 +251,7 @@
             // id_specLabel
             // 
             id_specLabel.AutoSize = true;
-            id_specLabel.Location = new System.Drawing.Point(118, 67);
+            id_specLabel.Location = new System.Drawing.Point(93, 63);
             id_specLabel.Name = "id_specLabel";
             id_specLabel.Size = new System.Drawing.Size(54, 16);
             id_specLabel.TabIndex = 2;
@@ -259,7 +260,7 @@
             // id_specTextBox
             // 
             this.id_specTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.specialitesBindingSource, "id_spec", true));
-            this.id_specTextBox.Location = new System.Drawing.Point(193, 64);
+            this.id_specTextBox.Location = new System.Drawing.Point(168, 60);
             this.id_specTextBox.Name = "id_specTextBox";
             this.id_specTextBox.Size = new System.Drawing.Size(100, 22);
             this.id_specTextBox.TabIndex = 3;
@@ -267,7 +268,7 @@
             // nom_specLabel
             // 
             nom_specLabel.AutoSize = true;
-            nom_specLabel.Location = new System.Drawing.Point(118, 95);
+            nom_specLabel.Location = new System.Drawing.Point(93, 91);
             nom_specLabel.Name = "nom_specLabel";
             nom_specLabel.Size = new System.Drawing.Size(69, 16);
             nom_specLabel.TabIndex = 4;
@@ -276,46 +277,57 @@
             // nom_specTextBox
             // 
             this.nom_specTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.specialitesBindingSource, "nom_spec", true));
-            this.nom_specTextBox.Location = new System.Drawing.Point(193, 92);
+            this.nom_specTextBox.Location = new System.Drawing.Point(168, 88);
             this.nom_specTextBox.Name = "nom_specTextBox";
             this.nom_specTextBox.Size = new System.Drawing.Size(100, 22);
             this.nom_specTextBox.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(546, 67);
+            this.button1.Location = new System.Drawing.Point(462, 55);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Ajouter";
+            this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(546, 111);
+            this.button2.Location = new System.Drawing.Point(462, 91);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Modifier";
+            this.button2.Text = "Ajouter";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(546, 154);
+            this.button3.Location = new System.Drawing.Point(462, 121);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Supprimer";
+            this.button3.Text = "Modifier";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(462, 151);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Supprimer";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // gestion_specialite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 489);
+            this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -328,7 +340,7 @@
             this.Name = "gestion_specialite";
             this.Text = "gestion_specialite";
             this.Load += new System.EventHandler(this.gestion_specialite_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gestion_cabinetDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_cabinetDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialitesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialitesBindingNavigator)).EndInit();
             this.specialitesBindingNavigator.ResumeLayout(false);
@@ -341,10 +353,10 @@
 
         #endregion
 
-        private gestion_cabinetDataSet gestion_cabinetDataSet;
+        private gestion_cabinetDataSet1 gestion_cabinetDataSet1;
         private System.Windows.Forms.BindingSource specialitesBindingSource;
-        private gestion_cabinetDataSetTableAdapters.specialitesTableAdapter specialitesTableAdapter;
-        private gestion_cabinetDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private gestion_cabinetDataSet1TableAdapters.specialitesTableAdapter specialitesTableAdapter;
+        private gestion_cabinetDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator specialitesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -366,5 +378,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

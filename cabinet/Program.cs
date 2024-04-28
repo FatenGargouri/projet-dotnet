@@ -16,7 +16,7 @@ namespace cabinet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gestion_specialite());
+            Application.Run(new gestion_medecin());
         }
     }
 }

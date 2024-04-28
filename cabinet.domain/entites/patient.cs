@@ -22,9 +22,9 @@ namespace cabinet.domain.entites
         public string tel_pat { get; set; }
 
         
-        public int? id_dos { get; set; } // Clé étrangère vers Dossier
+        //public int? id_dos { get; set; } // Clé étrangère vers Dossier
 
-        public dossier dossier { get; set; }
+       // public dossier dossier { get; set; }
 
         public virtual ICollection<rendezvous> rendezvous { get; set; }
     }

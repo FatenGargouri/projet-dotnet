@@ -56,10 +56,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="gestion_cabinetDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>gestion_cabinetDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_cabinetDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_cabinetDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_dossier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_dossier.Designer.cs">
+      <DependentUpon>gestion_dossier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_medecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_medecin.Designer.cs">
+      <DependentUpon>gestion_medecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_patient.Designer.cs">
+      <DependentUpon>gestion_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_rendezvous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion_rendezvous.Designer.cs">
+      <DependentUpon>gestion_rendezvous.cs</DependentUpon>
     </Compile>
     <Compile Include="gestion_specialite.cs">
       <SubType>Form</SubType>
@@ -69,6 +104,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_dossier.resx">
+      <DependentUpon>gestion_dossier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_medecin.resx">
+      <DependentUpon>gestion_medecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_patient.resx">
+      <DependentUpon>gestion_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion_rendezvous.resx">
+      <DependentUpon>gestion_rendezvous.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gestion_specialite.resx">
       <DependentUpon>gestion_specialite.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +141,17 @@
     </None>
     <None Include="gestion_cabinetDataSet.xss">
       <DependentUpon>gestion_cabinetDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_cabinetDataSet1.xsc">
+      <DependentUpon>gestion_cabinetDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_cabinetDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_cabinetDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_cabinetDataSet1.xss">
+      <DependentUpon>gestion_cabinetDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

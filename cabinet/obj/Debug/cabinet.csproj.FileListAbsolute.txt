@@ -21,4 +21,9 @@ D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.pdb
 D:\sem2\tp\.net\projet42\cabinet\cabinet\bin\Debug\cabinet.data.dll
 D:\sem2\tp\.net\projet42\cabinet\cabinet\bin\Debug\cabinet.data.pdb
 D:\sem2\tp\.net\projet42\cabinet\cabinet\bin\Debug\cabinet.data.dll.config
+D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.Form1.resources
+D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.gestion_patient.resources
+D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.gestion_dossier.resources
 D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.gestion_specialite.resources
+D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.gestion_medecin.resources
+D:\sem2\tp\.net\projet42\cabinet\cabinet\obj\Debug\cabinet.gestion_rendezvous.resources
